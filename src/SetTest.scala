@@ -1,3 +1,5 @@
+import SetTest.network1
+
 import scala.collection.immutable._
 import scala.reflect.internal.util.StringOps
 
@@ -31,7 +33,28 @@ object SetTest extends App {
   def aaaa(s: String): String = {
     s
   }
-private val counter = new Counter
+
+  private val counter = new Counter
+
+
+  private val person = new Person
+  println(person)
+
+  private val hhxx = new Cat("hhxx", 18)
+  hhxx name = "99"
+  println(hhxx.name)
+
+
+  private val network = new Network
+  private val network1 = new Network
+  private val fred = network.join("Fred")
+  private val wilma = network.join("Wilma")
+  fred.members += wilma
+
+    private val barney: network1.Member = network1.join("Barney")
+  fred.members+=barney
+
+
 
 
 
