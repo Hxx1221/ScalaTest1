@@ -34,5 +34,5 @@ object SetTest extends App {
 private val counter = new Counter
 
 
-  counter.clone()
+
 }
